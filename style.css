@@ -1,0 +1,189 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+body {
+    background: #D0D6F9;
+    background: rgb(21,17,86);
+    background:url("https://images.indianexpress.com/2022/05/Best-stargazing-apps-2022-featured.jpg")
+    center center/cover no-repeat;
+}
+
+/* -------------------- */
+/*     BASIC RESET      */
+/* -------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+:root {
+    /* COLORS */
+    --clr-dark: 230 35% 7%;
+    --clr-accent: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+    --gap: 3rem;
+  
+    /* FONT SIZES */
+    --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+    --fs-800: 3.5rem;
+    --fs-700: 1.5rem;
+    --fs-600: 1rem;
+    --fs-500: 1rem;
+    --fs-400: 0.9375rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+  
+    /* FONT-FAMILIES */
+    --ff-serif: "Tillana", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+  }
+  
+  /* Global Reset */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  /* Margin Reset */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  picture {
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-weight: 400;
+  }
+  
+  body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-accent));
+    min-height: 100vh;
+    line-height: 1.6;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    overflow-x: hidden;
+  }
+  
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font-family: inherit;
+  }
+
+  html
+{
+    font-size: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    font-size: 5rem;
+    letter-spacing: 2px;
+    border: 3px solid #fff;
+    position: fixed;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 60rem;
+    padding:5rem 10rem;
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: darkblue;
+
+}
+h3{
+    position: fixed;
+    top: 35%;
+    left: 65%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family:"Tillana",cursive;
+    color: gold;
+    
+}
+h4{
+    position:fixed;
+    top: 50%;
+    left: 42%;
+    font-size: 20px;
+    font-family: "Tillana",Arial,sans-serif;
+
+}
+
+.pic{
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    left: 1%;
+    top: 20%;
+}
+
+.social-menu ul {
+    position: absolute;
+    top: 103%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu > ul > li > a  > i{
+    font-size: 3rem;
+    margin-top: 20%;
+    margin-bottom: 50%;
+    list-style: none;
+}
+.social-menu ul li .fa {
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: white;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+    transform: translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color:darkblue;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color:purple;
+}
+
